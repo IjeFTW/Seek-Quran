@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f8f5; /* Fallback background color */
+  color: #333;
+
+  /* Background Image */
+  background-image: url('islambackground1.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-family: 'Amiri', serif;
+  font-size: 2.5em;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #555;
+}
+header img {
+  width:30%
+}
+
+/* Random Ayah Display */
+.random-ayah {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 8px solid #2e7d32;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+  font-family: 'Amiri',serif;
+}
+
+/* Search */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Surah List */
+#surahList {
+  list-style: none;
+  padding: 0;
+}
+
+#surahList li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#surahList li:hover {
+  background: #e8f5e9;
+}
+
+/* Chapter Details */
+#chapterDetails {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 4px solid #2e7d32;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Top Buttons in Chapter Details */
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#backButton, #fullSurahButton {
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #2e7d32;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+#backButton:hover, #fullSurahButton:hover {
+  background: #1b5e20;
+}
+
+/* Chapter Info & Extra Info */
+.chapter-info, .extra-info {
+  margin-bottom: 20px;
+}
+
+.chapter-info h2 {
+  font-family: 'Amiri', serif;
+  color: #2e7d32;
+}
+
+.extra-info h3 {
+  color: #2e7d32;
+}
+
+/* Notes Section */
+.notes-section {
+  background: #f9fff9;
+  padding: 15px;
+  border: 1px solid #c8e6c9;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.notes-section h3 {
+  color: #2e7d32;
+}
+
+.notes-section label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.notes-section input, .notes-section textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.notes-section button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #2e7d32;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.notes-section button:hover {
+  background: #1b5e20;
+}
+
+#savedNotesDisplay, #savedSpiritualDisplay {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Full Surah Page Styles */
+.full-surah-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.full-surah-header h1 {
+  flex-grow: 1;
+  text-align: center;
+  font-family: 'Amiri', serif;
+  color: #2e7d32;
+}
+
+.audio-section {
+  margin-bottom: 20px;
+}
+
+.full-surah-content .ayah {
+  margin-bottom: 20px;
+}
+
+.full-surah-content .arabic {
+  font-size: 1.8em;
+  font-family: 'Amiri', serif;
+  direction: rtl;
+  color: #2e7d32;
+}
+
+.full-surah-content .translation {
+  color: #555;
+  margin-top: 5px;
+}

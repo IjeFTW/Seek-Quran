@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran Surahs - Spiritual Discovery</title>
+  <!-- Import Amiri (for Arabic) and Roboto (for English) fonts from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Homepage Section -->
+  <div id="homepage">
+    <header>
+      <h1>Seek Quran</h1>
+      <p>Heap On The Knowledge of the Mankind.</p>
+      <img src="quran.png">
+    </header>
+    <!-- Random Ayah Display -->
+    <div id="randomAyah" class="random-ayah">
+      <!-- A random ayah text will be inserted here -->
+    </div>
+    <!-- Search Input -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search surah by name...">
+    </div>
+    <!-- Surah List -->
+    <ul id="surahList"></ul>
+  </div>
+
+  <!-- Chapter Detail Section (Initially hidden) -->
+  <div id="chapterDetails" style="display: none;">
+    <div class="top-buttons">
+      <button id="backButton">← Back</button>
+      <button id="fullSurahButton">Full Surah</button>
+    </div>
+    <div id="chapterInfo" class="chapter-info">
+      <!-- Chapter details (name, translation, etc.) will appear here -->
+    </div>
+    <div id="ExtraInfo" class="extra-info">
+      <!-- Extra info (spiritual discovery text, etc.) will appear here -->
+    </div>
+    <!-- User Notes Section -->
+    <div id="surahNotes" class="notes-section">
+      <h3>Your Self-Reflection</h3>
+      <label for="ayahCompletedInput">Ayahs Completed: </label>
+      <input type="number" id="ayahCompletedInput" placeholder="Enter number">
+      <br><br>
+      <label for="notesInput">Notes:</label>
+      <textarea id="notesInput" placeholder="Enter your self-reflection"></textarea>
+      <br><br>
+      <button id="saveNotesButton">Save</button>
+      <button id="deleteNotesButton">Delete</button>
+      <div id="savedNotesDisplay"></div>
+    </div>
+    <!-- Spiritual Discovery Section -->
+    <div id="Spiritual" class="notes-section">
+      <h3>Spiritual Discovery</h3>
+      <label for="discovery">Your Spiritual Discovery:</label>
+      <textarea id="discovery" placeholder="Enter Your Spiritual Discovery"></textarea>
+      <br><br>
+      <button id="saveSpiritualButton">Save</button>
+      <button id="deleteSpiritualButton">Delete</button>
+      <div id="savedSpiritualDisplay"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
